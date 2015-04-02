@@ -2,7 +2,7 @@
 	header('Content-type: application/json');
 	$status = array(
 		'type'=>'success',
-		'message'=>'Email sent!'
+		'message'=>'Thank you for contact us. As early as possible  we will contact you'
 	);
 
     $name = @trim(stripslashes($_POST['name'])); 
@@ -11,7 +11,7 @@
     $message = @trim(stripslashes($_POST['message'])); 
 
     $email_from = $email;
-    $email_to = 'email@gmail.com';
+    $email_to = 'admin@crowlventures.com';
 
     $body = 'Name: ' . $name . "\n\n" . 'Email: ' . $email . "\n\n" . 'Subject: ' . $subject . "\n\n" . 'Message: ' . $message;
 
